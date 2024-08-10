@@ -4,7 +4,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <conio.h>
-// Ham dem so khoang trang trong chuoi
+
+
+// 1.Ham dem so khoang trang trong chuoi
 int demKhoangTrang(char* str) {
     int count = 0;
     while (*str) {
@@ -15,6 +17,21 @@ int demKhoangTrang(char* str) {
     }
     return count;
 }
+
+// 2.Ham xoa khoang trang thua trong chuoi
+void xoaKhoangTrangThua(char* str) {
+    int i, x = 0;
+    for (i = 0; str[i]; i++) {
+        if (!isspace(str[i]) || (i > 0 && !isspace(str[i - 1]))) {
+            str[x++] = str[i];
+        }
+    }
+    if (x > 0 && isspace(str[x - 1])) {
+        x--;
+    }
+    str[x] = '\0';
+}
+
 
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
@@ -46,6 +63,12 @@ int main() {
             _getch();
             break;
         case 2:           
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            xoaKhoangTrangThua(str);
+            printf("Chuoi sau khi xoa khoang trang thua: %s\n", str);
+            _getch();
             break;
         case 3:           
             break;
