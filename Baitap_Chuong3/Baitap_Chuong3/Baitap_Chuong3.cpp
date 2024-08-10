@@ -70,6 +70,21 @@ void catHoTen(char* hoTen, char* hoLot, char* ten) {
     }
 }
 
+// 6.Ham chen tu vao vi tri 
+void chenTu(char* str, char* tu, int viTri) {
+    int len = strlen(str);
+    int lenTu = strlen(tu);
+    for (int i = len - 1; i >= viTri; i--) {
+        str[i + lenTu] = str[i];
+    }
+    for (int i = 0; i < lenTu; i++) {
+        str[viTri + i] = tu[i];
+    }
+    str[len + lenTu] = '\0';
+}
+
+
+
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
     int choice, viTri;
@@ -140,6 +155,18 @@ int main() {
             _getch();
             break;
         case 6:           
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            printf("Nhap tu can chen: ");
+            fgets(tu, sizeof(tu), stdin);
+            tu[strcspn(tu, "\n")] = '\0';
+            printf("Nhap vi tri chen: ");
+            scanf("%d", &viTri);
+            getchar();
+            chenTu(str, tu, viTri);
+            printf("Chuoi sau khi chen: %s\n", str);
+            _getch();
             break;
         case 7:           
             break;

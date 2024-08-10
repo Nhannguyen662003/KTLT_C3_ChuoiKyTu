@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HK Summer\\KT_LT\\Exercise\\New folder\\Baitap_Chuong3\\",
+  "WorkspaceRootPath": "D:\\HK Summer\\KT_LT\\Exercise_Nghia\\KTLT_C3_ChuoiKyTu\\Baitap_Chuong3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC13A7AA-EE0D-4B9E-8B5D-9824C3039AB6}|Baitap_Chuong3\\Baitap_Chuong3.vcxproj|D:\\HK Summer\\KT_LT\\Exercise\\New folder\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{EC13A7AA-EE0D-4B9E-8B5D-9824C3039AB6}|Baitap_Chuong3\\Baitap_Chuong3.vcxproj|D:\\HK Summer\\KT_LT\\Exercise_Nghia\\KTLT_C3_ChuoiKyTu\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EC13A7AA-EE0D-4B9E-8B5D-9824C3039AB6}|Baitap_Chuong3\\Baitap_Chuong3.vcxproj|solutionrelative:Baitap_Chuong3\\Baitap_Chuong3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Baitap_Chuong3.cpp",
-              "DocumentMoniker": "D:\\HK Summer\\KT_LT\\Exercise\\New folder\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp",
+              "DocumentMoniker": "D:\\HK Summer\\KT_LT\\Exercise_Nghia\\KTLT_C3_ChuoiKyTu\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp",
               "RelativeDocumentMoniker": "Baitap_Chuong3\\Baitap_Chuong3.cpp",
-              "ToolTip": "D:\\HK Summer\\KT_LT\\Exercise\\New folder\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp",
+              "ToolTip": "D:\\HK Summer\\KT_LT\\Exercise_Nghia\\KTLT_C3_ChuoiKyTu\\Baitap_Chuong3\\Baitap_Chuong3\\Baitap_Chuong3.cpp",
               "RelativeToolTip": "Baitap_Chuong3\\Baitap_Chuong3.cpp",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAIwAAAASAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-10T14:04:56.758Z",
               "EditorCaption": ""

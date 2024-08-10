@@ -1,4 +1,5 @@
 ﻿  Baitap_Chuong3.cpp
-D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(75,17): warning C4101: 'viTri': unreferenced local variable
-D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(74,40): warning C4101: 'tu': unreferenced local variable
-  Baitap_Chuong3.vcxproj -> D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\x64\Debug\Baitap_Chuong3.exe
+D:\HK Summer\KT_LT\Exercise_Nghia\KTLT_C3_ChuoiKyTu\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(75,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\HK Summer\KT_LT\Exercise_Nghia\KTLT_C3_ChuoiKyTu\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LINK : D:\HK Summer\KT_LT\Exercise_Nghia\KTLT_C3_ChuoiKyTu\Baitap_Chuong3\x64\Debug\Baitap_Chuong3.exe not found or not built by the last incremental link; performing full link
+  Baitap_Chuong3.vcxproj -> D:\HK Summer\KT_LT\Exercise_Nghia\KTLT_C3_ChuoiKyTu\Baitap_Chuong3\x64\Debug\Baitap_Chuong3.exe
