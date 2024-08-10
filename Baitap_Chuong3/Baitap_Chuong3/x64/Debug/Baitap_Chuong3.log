@@ -1,5 +1,4 @@
 ﻿  Baitap_Chuong3.cpp
-D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(61,17): warning C4101: 'viTri': unreferenced local variable
-D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(60,20): warning C4101: 'hoLot': unreferenced local variable
-D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(60,40): warning C4101: 'tu': unreferenced local variable
+D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(75,17): warning C4101: 'viTri': unreferenced local variable
+D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\Baitap_Chuong3\Baitap_Chuong3.cpp(74,40): warning C4101: 'tu': unreferenced local variable
   Baitap_Chuong3.vcxproj -> D:\HK Summer\KT_LT\Exercise\New folder\Baitap_Chuong3\x64\Debug\Baitap_Chuong3.exe

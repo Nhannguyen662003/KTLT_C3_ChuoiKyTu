@@ -56,6 +56,20 @@ int timTen(char* hoTen, char* ten) {
     return strstr(hoTen, ten) != NULL;
 }
 
+// 5.Ham chuyen chuoi ho ten thanh ho lot va ten 
+void catHoTen(char* hoTen, char* hoLot, char* ten) {
+    char* token = strrchr(hoTen, ' ');
+    if (token != NULL) {
+        strcpy(ten, token + 1);
+        strncpy(hoLot, hoTen, token - hoTen);
+        hoLot[token - hoTen] = '\0';
+    }
+    else {
+        strcpy(hoLot, "");
+        strcpy(ten, hoTen);
+    }
+}
+
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
     int choice, viTri;
@@ -117,6 +131,13 @@ int main() {
             _getch();
             break;
         case 5:          
+            printf("Nhap ho ten: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            catHoTen(str, hoLot, ten);
+            printf("Ho lot: %s\n", hoLot);
+            printf("Ten: %s\n", ten);
+            _getch();
             break;
         case 6:           
             break;
