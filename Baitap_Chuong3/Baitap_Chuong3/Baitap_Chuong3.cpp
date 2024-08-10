@@ -110,6 +110,24 @@ void lietKeKyTu(char* str) {
     }
 }
 
+// 9.Ham tiem kiem ky tu xuat hien nhieu nhat
+char timKyTuXuatHienNhieuNhat(char* str) {
+    int count[256] = { 0 };
+    while (*str) {
+        count[(unsigned char)*str]++;
+        str++;
+    }
+    int max = 0;
+    char result;
+    for (int i = 0; i < 256; i++) {
+        if (count[i] > max) {
+            max = count[i];
+            result = i;
+        }
+    }
+    return result;
+}
+
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
     int choice, viTri;
@@ -212,6 +230,11 @@ int main() {
             _getch();
             break;
         case 9:           
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            printf("Ky tu xuat hien nhieu nhat: %c\n", timKyTuXuatHienNhieuNhat(str));
+            _getch();
             break;
         case 0:
             printf("Thoat chuong trinh.\n");
