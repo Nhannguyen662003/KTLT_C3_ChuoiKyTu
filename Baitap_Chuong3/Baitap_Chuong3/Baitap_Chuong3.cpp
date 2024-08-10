@@ -32,6 +32,24 @@ void xoaKhoangTrangThua(char* str) {
     str[x] = '\0';
 }
 
+// 3.Ham chuyen chu cai thuong thanh in hoa, cac chu con lai thanh chu thuong
+void chuanHoaChuoi(char* str) {
+    int i = 0;
+    int dauTu = 1;
+    while (str[i]) {
+        if (isspace(str[i])) {
+            dauTu = 1;
+        }
+        else if (dauTu) {
+            str[i] = toupper(str[i]);
+            dauTu = 0;
+        }
+        else {
+            str[i] = tolower(str[i]);
+        }
+        i++;
+    }
+}
 
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
@@ -71,6 +89,12 @@ int main() {
             _getch();
             break;
         case 3:           
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            chuanHoaChuoi(str);
+            printf("Chuoi sau khi chuan hoa: %s\n", str);
+            _getch();
             break;
         case 4:           
             break;
