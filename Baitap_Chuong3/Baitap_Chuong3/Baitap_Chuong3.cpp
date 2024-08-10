@@ -51,6 +51,11 @@ void chuanHoaChuoi(char* str) {
     }
 }
 
+// 4.Ham tim kiem ten trong chuoi ho ten 
+int timTen(char* hoTen, char* ten) {
+    return strstr(hoTen, ten) != NULL;
+}
+
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
     int choice, viTri;
@@ -97,6 +102,19 @@ int main() {
             _getch();
             break;
         case 4:           
+            printf("Nhap ho ten: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            printf("Nhap ten can tim: ");
+            fgets(ten, sizeof(ten), stdin);
+            ten[strcspn(ten, "\n")] = '\0';
+            if (timTen(str, ten)) {
+                printf("Ten '%s' da nhap dung.\n", ten);
+            }
+            else {
+                printf("Ten '%s' da nhap sai.\n", ten);
+            }
+            _getch();
             break;
         case 5:          
             break;
