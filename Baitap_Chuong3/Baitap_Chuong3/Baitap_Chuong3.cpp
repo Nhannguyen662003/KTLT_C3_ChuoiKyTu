@@ -83,7 +83,18 @@ void chenTu(char* str, char* tu, int viTri) {
     str[len + lenTu] = '\0';
 }
 
-
+// 7.Ham xoa tu trong chuoi
+void xoaTu(char* str, char* tu) {
+    char* pos = strstr(str, tu);
+    if (pos != NULL) {
+        int len = strlen(tu);
+        while (*(pos + len)) {
+            *pos = *(pos + len);
+            pos++;
+        }
+        *pos = '\0';
+    }
+}
 
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
@@ -169,6 +180,15 @@ int main() {
             _getch();
             break;
         case 7:           
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            printf("Nhap tu can xoa: ");
+            fgets(tu, sizeof(tu), stdin);
+            tu[strcspn(tu, "\n")] = '\0';
+            xoaTu(str, tu);
+            printf("Chuoi sau khi xoa: %s\n", str);
+            _getch();
             break;
         case 8:          
             break;
