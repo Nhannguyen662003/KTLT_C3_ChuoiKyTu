@@ -96,6 +96,20 @@ void xoaTu(char* str, char* tu) {
     }
 }
 
+// 8.Ham liet ke so luong tu xuat hien cua moi ky tu
+void lietKeKyTu(char* str) {
+    int count[256] = { 0 };
+    while (*str) {
+        count[(unsigned char)*str]++;
+        str++;
+    }
+    for (int i = 0; i < 256; i++) {
+        if (count[i] > 0) {
+            printf("%c: %d\n", i, count[i]);
+        }
+    }
+}
+
 int main() {
     char str[100], hoLot[50], ten[50], tu[50];
     int choice, viTri;
@@ -191,6 +205,11 @@ int main() {
             _getch();
             break;
         case 8:          
+            printf("Nhap chuoi: ");
+            fgets(str, sizeof(str), stdin);
+            str[strcspn(str, "\n")] = '\0';
+            lietKeKyTu(str);
+            _getch();
             break;
         case 9:           
             break;
